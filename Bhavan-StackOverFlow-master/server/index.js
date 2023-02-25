@@ -13,7 +13,7 @@ app.get('/',(req,res) => {
 
 const post = process.env.PORT || 5000
 
-const CONNECTION_URL = "mongodb+srv://Bhavna:<Mongo>@stack-overflow-clone.brwvkdc.mongodb.net/?retryWrites=true&w=majority"
+const CONNECTION_URL = "mongodb+srv://Bhavna:Mongo@stack-overflow-clone.brwvkdc.mongodb.net/?retryWrites=true&w=majority"
 
 
 mongoose.connect(CONNECTION_URL,{useNewUrlParser: true, useUnifiedTopology:true})
