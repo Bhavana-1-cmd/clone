@@ -1,7 +1,9 @@
 import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
-import dotenv from "dotenv"
+// import dotenv from "dotenv"
+
+import userRoutes from './routes/users.js'
 
 const app = express();
 dotenv.config();
@@ -12,6 +14,8 @@ app.use(cors());
 app.get("/", (req, res) => {
   res.send("This is a Bhavna stack Overflow clone API");
 });
+
+app.use('/user',userRoutes)
 
 const PORT = process.env.PORT || 5000;
 
