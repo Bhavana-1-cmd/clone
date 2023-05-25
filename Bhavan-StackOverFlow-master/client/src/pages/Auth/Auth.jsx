@@ -19,7 +19,7 @@ const Auth = () => {
   const handleswitch = () => {
     setIsSignup(!isSignup)
   }
-
+console.log(name,email,password)
 const handlesubmit = (e) => {
   e.preventDefault()
   if(!email && !password){
